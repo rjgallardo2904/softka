@@ -1,0 +1,9 @@
+version: '1.0'
+
+services:
+  java-server:
+    container_name: java-server
+    image: softka/java-server
+    build: .
+    ports:
+      - 8080:8080

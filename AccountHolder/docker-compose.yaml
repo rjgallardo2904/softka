@@ -1,0 +1,25 @@
+version: '1.0'
+
+services:
+  java-account:
+    container_name: java-account
+    image: softka/java-account
+    build: .
+    ports:
+      - 8081:8081
+    environment: 
+      - DATABASE_URL=jdbc:postgresql://localhost:5432/cliente_bd
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=root
+    depends_on:
+      - java_db1
+  java_db1:
+    container_name: java_db1
+    image: postgres:16
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: cliente_bd
+    
