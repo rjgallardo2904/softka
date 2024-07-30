@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "8dd635d6-fd3d-4eb5-90c6-47aa7cf96264",
+		"name": "Reporte",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21645310"
+	},
+	"item": [
+		{
+			"name": "Reporte",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/v1/reporte/1?startDate=2022-01-01T08:00:00&endDate=2022-05-01T23:00:00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"reporte",
+						"1"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2022-01-01T08:00:00"
+						},
+						{
+							"key": "endDate",
+							"value": "2022-05-01T23:00:00"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
